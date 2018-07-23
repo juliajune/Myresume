@@ -151,6 +151,7 @@ return [
          * Package Service Providers...
          */
         Cviebrock\EloquentSluggable\ServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
         /*
          * Application Service Providers...
