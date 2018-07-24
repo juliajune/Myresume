@@ -18,8 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')
             $table->string('password');
-            $table->integer('is_admin')->default(0);
-            $table->integer('is_status')->default(0);
+            $table->integer('is_admin')->default(0); // 0 -not admin, 1-admin
+            $table->integer('is_status')->default(0); // 0 - not banned, 1- banned
             $table->rememberToken();
             $table->timestamps();
         });
